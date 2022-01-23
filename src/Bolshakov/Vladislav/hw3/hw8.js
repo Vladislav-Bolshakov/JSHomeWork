@@ -1,11 +1,15 @@
-var arr = [1, 2, 3];
+function func(arr) {
+    console.log(arr.shift());
 
-function func(i){
-    console.log(arr[i++]);
-    if(i<arr.length){
-        func(i);
+    if(arr.length != 0){
+        func(arr);
     }else {
-      throw  new Error( 'parameter type should be an array');
-      }
+      throw  new Error('parameter type should be an array');
+      } return arr;
 }
-func(0);
+func([1, 2, 3]);
+func(1,2,3);
+func('Content');
+func([]);
+
+
