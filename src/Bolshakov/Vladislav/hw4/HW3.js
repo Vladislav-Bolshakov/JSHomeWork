@@ -1,7 +1,6 @@
+const arr = [1,2,3];
 
-var arr = [1,2,3];
-
-var result = arr.every(function(item, i, arr) {
+const result = arr.every(function(item, i, arr) {
  return item > 0;
 
 });

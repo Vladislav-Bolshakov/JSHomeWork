@@ -1,9 +1,9 @@
 
 
 
-var arr = [1,2,3];
+const arr = [1,2,3];
 
-var result = arr.some(function(item, i, arr) {
+const result = arr.some(function(item, i, arr) {
  return i > 0;
 
 });

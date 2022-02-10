@@ -1,7 +1,7 @@
 
-    var arr = ['abcd', 'abcde', 'ab', 'abc'];
+    const arr = ['abcd', 'abcde', 'ab', 'abc'];
 
-    var arrLength = arr.map(function(item){
+    const arrLength = arr.map(function(item){
         return item.length;
     });
 

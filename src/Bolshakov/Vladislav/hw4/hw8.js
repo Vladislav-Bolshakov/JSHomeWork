@@ -3,16 +3,16 @@
 function arrSum(arr) {
   var sum = 0;
 
-  arr.forEach(function(v) {
-    if (typeof v == 'object')
-      sum += arrSum(v);
+  arr.forEach(function(i) {
+    if (typeof i== 'object')
+      sum += arrSum(i);
     else
-
-      sum += v
+      sum += i
   })
 
   return sum;
 }
+
 console.log(arrSum( [[[1, 2], [1, 2]], [[2, 1], [1, 2]]]));
 console.log(arrSum( [[[[[1,2]]]]]));
 console.log(arrSum( [[[[[1,2]]],2],1]));
